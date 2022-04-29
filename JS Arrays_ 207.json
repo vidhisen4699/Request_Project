@@ -1,0 +1,1205 @@
+{
+    "course": {
+        "id": "207",
+        "name": "JS Arrays",
+        "logo": "https://merakilearn.s3.ap-south-1.amazonaws.com/coursev2_images/Javascript/js_arrays.jpg",
+        "notes": null,
+        "days_to_complete": null,
+        "short_description": "Iss topic mai hum JavaScript ke Arrays ke bare mai janege",
+        "type": "js",
+        "course_type": "json",
+        "lang_available": [
+            "en"
+        ],
+        "exercises": [
+            {
+                "id": "6053",
+                "parent_exercise_id": "6053",
+                "course_id": "207",
+                "name": "Introduction",
+                "slug": "js-arrays_json__Arrays/Introduction_json",
+                "sequence_num": 0,
+                "review_type": "manual",
+                "submission_type": null,
+                "github_link": "https://github.com/navgurukul/newton/tree/master/js-arrays_json/Arrays/Introduction.json",
+                "solution": null,
+                "content": [
+                    {
+                        "component": "text",
+                        "value": "Think about a list of your favourite things. "
+                    },
+                    {
+                        "component": "text",
+                        "value": "For example, "
+                    },
+                    {
+                        "component": "text",
+                        "value": "your mother\u2019s name, Ramani"
+                    },
+                    {
+                        "component": "text",
+                        "value": "Your favourite colour, Black"
+                    },
+                    {
+                        "component": "text",
+                        "value": "Your favourite number, 1"
+                    },
+                    {
+                        "component": "text",
+                        "value": "Your birthdate, Jan 2, 1996"
+                    },
+                    {
+                        "component": "text",
+                        "value": "Now imagine you had to store them together as myFavouriteThings in JS. To do this you will use an Array Data Type."
+                    },
+                    {
+                        "component": "text",
+                        "value": "An array is a type of object used for storing multiple values in a single <span style=\"\">variable</span>."
+                    },
+                    {
+                        "component": "text",
+                        "value": "The simplest way to create an array is by specifying the array elements as a comma-separated list enclosed by square brackets, as shown in the example below:"
+                    },
+                    {
+                        "component": "code",
+                        "type": "javascript",
+                        "title": "",
+                        "value": "var myFavouriteThings = [\"Ramani\", \"Black\",1, \"jan 2 1996\"];"
+                    },
+                    {
+                        "component": "text",
+                        "value": "Same like myFavouriteFriends"
+                    },
+                    {
+                        "component": "code",
+                        "type": "javascript",
+                        "title": "",
+                        "value": "var myFavouriteFriends = [\"shweta\", \"rani\", \"nayak\", \"kajal\"]"
+                    }
+                ]
+            },
+            {
+                "id": "6055",
+                "parent_exercise_id": "6053",
+                "course_id": "207",
+                "name": "Operations-On-Arrays",
+                "slug": "js-arrays_json__Arrays/Operations-On-Arrays_json",
+                "sequence_num": 1,
+                "review_type": "manual",
+                "submission_type": null,
+                "github_link": "https://github.com/navgurukul/newton/tree/master/js-arrays_json/Arrays/Operations-On-Arrays.json",
+                "solution": null,
+                "content": [
+                    {
+                        "component": "text",
+                        "value": "<h3> Create an array</h3>",
+                        "decoration": {
+                            "type": "bullet"
+                        }
+                    },
+                    {
+                        "component": "code",
+                        "type": "javascript",
+                        "title": "",
+                        "value": "var fruits = ['Apple', 'Banana'];<br>console.log(fruits.length); <br>// output 2"
+                    },
+                    {
+                        "component": "header",
+                        "variant": 3,
+                        "value": "Explanation :"
+                    },
+                    {
+                        "component": "text",
+                        "value": "In this we have used the length property to find the length of the array. Beacuse in our fruits list we have only 2 elements those are Apple and Banana it given us the <span style=\"\">output</span> 2. It depends generally on the how maelements present in the arrays."
+                    },
+                    {
+                        "component": "text",
+                        "value": "<h3> Access an Array item using the index position</h3>",
+                        "decoration": {
+                            "type": "bullet"
+                        }
+                    },
+                    {
+                        "component": "code",
+                        "type": "javascript",
+                        "title": "",
+                        "value": "var fruits = ['Apple', 'Banana', \u2018Orange\u2019]<br>console.log(fruits[1]); // output \u2018Banana\u2019"
+                    },
+                    {
+                        "component": "header",
+                        "variant": 3,
+                        "value": "Explanation :"
+                    },
+                    {
+                        "component": "text",
+                        "value": "In javascript arrays elements can be accessed by indexing which specify the position of the current element in the array. And indexing starts with 0."
+                    },
+                    {
+                        "component": "text",
+                        "value": "<h3> Loop over an Array</h3>",
+                        "decoration": {
+                            "type": "bullet"
+                        }
+                    },
+                    {
+                        "component": "code",
+                        "type": "javascript",
+                        "title": "",
+                        "value": "var array = [ 1, 2, 3, 4, 5, 6 ];<br>for (var index = 0; index < array.length; index++) {<br>console.log(array[index]);<br>}<br>//output<br>// 1<br>// 2<br>// 3<br>// 4<br>// 5"
+                    },
+                    {
+                        "component": "header",
+                        "variant": 3,
+                        "value": "Explanation:"
+                    },
+                    {
+                        "component": "text",
+                        "value": "The index starts with 0 as (index = 0) and it will run upto the length of the array <br>(index &lt; array.length) which is according to the elements present in the array, currently it is 6."
+                    },
+                    {
+                        "component": "text",
+                        "value": "When this <span style=\"\">loop</span> runs the first time, the value of index is 0, 0&lt;6 is <span style=\"\">true</span>, and it is incremented due to index++, index value will become 1, therefore array [index] is printed"
+                    },
+                    {
+                        "component": "text",
+                        "value": "When this <span style=\"\">loop</span> runs the second time, the value of index is 0, 1&lt;6 is <span style=\"\">true</span>, and it is incremented due to index++, index value will become 2, therefore array [index] is printed"
+                    },
+                    {
+                        "component": "text",
+                        "value": "When this <span style=\"\">loop</span> runs the third time, the value of index is 0, 2&lt;6 is <span style=\"\">true</span>, and it is incremented due to index++, index value will become 3, therefore array [index] is printed"
+                    },
+                    {
+                        "component": "text",
+                        "value": "When this <span style=\"\">loop</span> runs the fourth time, the value of index is 0, 3&lt;6 is <span style=\"\">true</span>, and it is incremented due to index++, index value will become 4, therefore array [index] is printed"
+                    },
+                    {
+                        "component": "text",
+                        "value": "When this <span style=\"\">loop</span> runs the fifth time, the value of index is 0, 4&lt;6 is <span style=\"\">true</span>, and it is incremented due to index++, index value will become 5, therefore array [index] is printed"
+                    },
+                    {
+                        "component": "text",
+                        "value": "When this <span style=\"\">loop</span> runs the sixth time, the value of index is 0, 5&lt;6 is <span style=\"\">true</span>, and it is incremented due to index++, index value will become 5, therefore array [index] is printed"
+                    },
+                    {
+                        "component": "text",
+                        "value": "When this <span style=\"\">loop</span> runs the seventh time, the value of the index is 6. Clearly, 6&lt;6 <span style=\"\">false</span>, so the for <span style=\"\">loop</span> will stop there."
+                    },
+                    {
+                        "component": "text",
+                        "value": "<h3> Add an item to the end of an Array  </h3>",
+                        "decoration": {
+                            "type": "bullet"
+                        }
+                    },
+                    {
+                        "component": "code",
+                        "type": "javascript",
+                        "title": "",
+                        "value": "var fruits = ['Apple', 'Banana']<br>fruits.push('Orange')<br>console.log (fruits)<br>// output [\"Apple\", \"Banana\", \"Orange\"]"
+                    },
+                    {
+                        "component": "text",
+                        "value": "Remove an item from the end of an Array"
+                    },
+                    {
+                        "component": "code",
+                        "type": "javascript",
+                        "title": "",
+                        "value": "var fruits = ['Apple', 'Banana', \u2018Orange\u2019]<br>fruits.pop()<br>console.log(fruits)<br>// output [\"Apple\", \"Banana\"]"
+                    },
+                    {
+                        "component": "text",
+                        "value": "<h3> Remove an item from the beginning of an Array</h3>",
+                        "decoration": {
+                            "type": "bullet"
+                        }
+                    },
+                    {
+                        "component": "code",
+                        "type": "javascript",
+                        "title": "",
+                        "value": "var fruits = ['Apple', 'Banana', 'orange']<br>fruits.shift()<br>console.log(fruits)<br><br>// output [\u2018Banana\u2019, \u2018orange\u2019 ]"
+                    },
+                    {
+                        "component": "text",
+                        "value": "<h3> Add an item to the beginning of an Array</h3>",
+                        "decoration": {
+                            "type": "bullet"
+                        }
+                    },
+                    {
+                        "component": "code",
+                        "type": "javascript",
+                        "title": "",
+                        "value": "var fruits = ['Apple', 'Banana']<br>fruits.unshift(\u2018Grapes\u2019)<br>console.log(fruits);<br>// output : [ 'Grapes', 'Apple', 'Banana' ]"
+                    },
+                    {
+                        "component": "text",
+                        "value": "<h3> Find an index of an items the Array</h3>",
+                        "decoration": {
+                            "type": "bullet"
+                        }
+                    },
+                    {
+                        "component": "code",
+                        "type": "javascript",
+                        "title": "",
+                        "value": "let fruits = ['Apple', 'Banana', 'Orange']<br>let position = fruits.indexOf('Banana')<br>console.log(position);<br>//  output 1"
+                    },
+                    {
+                        "component": "text",
+                        "value": "Remove an item by its index position"
+                    },
+                    {
+                        "component": "code",
+                        "type": "javascript",
+                        "title": "",
+                        "value": "var fruits = ['Apple', 'Banana', 'Orange']<br>"
+                    },
+                    {
+                        "component": "text",
+                        "value": "let removedItem = fruits.splice(1,1)<br>// <span style=\"\">output</span> [\u2018Apple\u2019, \u2018Orange\u2019]"
+                    },
+                    {
+                        "component": "code",
+                        "type": "other",
+                        "title": "",
+                        "value": "<br>#### Note: <br><br>While using splice(position, number of items to be removed) method you <br>have to specify the position to start from and the number of items you want to remove from the array.<br><br>So here, we are saying begin from position 1, which is Banana, and remove one item from the array. Thus Banana will be removed.<br> <br>- ### Accessing Array Elements<br><br>JavaScript arrays are zero-indexed. The first element of an array is at index 0. <br><br>javascript<br>var arr = ['shweta', 'nayak', 'komal', 'zeba']<br>console.log(arr[0])              // output 'shweta' the first element<br>console.log(arr[1])              // logs 'nayak' the second element<br>console.log(arr[arr.length - 1]) // logs 'Zeba' the last element."
+                    },
+                    {
+                        "component": "text",
+                        "value": "In this example, arr.length gives us the total number of elements in the array, which is 4. 4 - 1 is 3. So this <span style=\"\">statement</span> prints out arr[3], which is Zeba."
+                    },
+                    {
+                        "component": "header",
+                        "variant": 3,
+                        "value": "Example :"
+                    },
+                    {
+                        "component": "code",
+                        "type": "javascript",
+                        "title": "",
+                        "value": "let arr = ['shweta', 'nayak', 'komal', \u2018Zeba\u2019]<br>console.log(arr.0)   // syntax error"
+                    },
+                    {
+                        "component": "header",
+                        "variant": 3,
+                        "value": "Explanation :"
+                    },
+                    {
+                        "component": "text",
+                        "value": "The above example will throw a <span style=\"\">syntax</span> <span style=\"\">error</span> in javascript because here in javascript while accessing the elements from an array we generally use [ ] (brackets notation) instead of .(dot notation)"
+                    }
+                ]
+            },
+            {
+                "id": "6054",
+                "parent_exercise_id": "6054",
+                "course_id": "207",
+                "name": "Question1",
+                "slug": "js-arrays_json__Exercises/Question1_json",
+                "sequence_num": 100,
+                "review_type": "manual",
+                "submission_type": null,
+                "github_link": "https://github.com/navgurukul/newton/tree/master/js-arrays_json/Exercises/Question1.json",
+                "solution": null,
+                "content": [
+                    {
+                        "component": "text",
+                        "value": "Create an array named \u201cmyFavouriteGames\u201d and store the elements of different games in it."
+                    },
+                    {
+                        "component": "code",
+                        "type": "javascript",
+                        "title": "",
+                        "value": "//please write code here"
+                    },
+                    {
+                        "component": "code",
+                        "type": "javascript",
+                        "title": "solution",
+                        "value": "var myFavouriteGames = [\"chess\", \"Ludo\", \"Badminton\", \"Volleyball\"];<br>console.log(myFavouriteGames);"
+                    }
+                ]
+            },
+            {
+                "id": "6056",
+                "parent_exercise_id": "6054",
+                "course_id": "207",
+                "name": "Question2",
+                "slug": "js-arrays_json__Exercises/Question2_json",
+                "sequence_num": 101,
+                "review_type": "manual",
+                "submission_type": null,
+                "github_link": "https://github.com/navgurukul/newton/tree/master/js-arrays_json/Exercises/Question2.json",
+                "solution": null,
+                "content": [
+                    {
+                        "component": "text",
+                        "value": "Create an array named myFavouriteFruits, with 4 elements. Console the third element of the array."
+                    },
+                    {
+                        "component": "code",
+                        "type": "javascript",
+                        "title": "",
+                        "value": "//please write code here"
+                    },
+                    {
+                        "component": "code",
+                        "type": "javascript",
+                        "title": "solution",
+                        "value": "var myFavouriteFruits = [\"Mango\", \"Orange\", \"Banana\", \"Grapes\"];<br><br>console.log(myFavouriteFruits[2]);"
+                    }
+                ]
+            },
+            {
+                "id": "6057",
+                "parent_exercise_id": "6054",
+                "course_id": "207",
+                "name": "Question3",
+                "slug": "js-arrays_json__Exercises/Question3_json",
+                "sequence_num": 102,
+                "review_type": "manual",
+                "submission_type": null,
+                "github_link": "https://github.com/navgurukul/newton/tree/master/js-arrays_json/Exercises/Question3.json",
+                "solution": null,
+                "content": [
+                    {
+                        "component": "text",
+                        "value": "What is the <span style=\"\">output</span> for the following <span style=\"\">code</span>?"
+                    },
+                    {
+                        "component": "code",
+                        "type": "javascript",
+                        "title": "",
+                        "value": "var myFavouriteFruits = [\"Mango\", \"Orange\", \"Banana\"];<br><br>console.log(myFavouriteFruits.pop());<br>"
+                    },
+                    {
+                        "component": "code",
+                        "type": "javascript",
+                        "title": "solution",
+                        "value": "Banana"
+                    }
+                ]
+            },
+            {
+                "id": "6058",
+                "parent_exercise_id": "6054",
+                "course_id": "207",
+                "name": "Question4",
+                "slug": "js-arrays_json__Exercises/Question4_json",
+                "sequence_num": 103,
+                "review_type": "manual",
+                "submission_type": null,
+                "github_link": "https://github.com/navgurukul/newton/tree/master/js-arrays_json/Exercises/Question4.json",
+                "solution": null,
+                "content": [
+                    {
+                        "component": "text",
+                        "value": "Add \u201cBasketball\u201d in the beginning of the array?"
+                    },
+                    {
+                        "component": "code",
+                        "type": "javascript",
+                        "title": "",
+                        "value": "var myFavouriteGames = [\"Chess\", \"Ludo\", \"Badminton\"];"
+                    },
+                    {
+                        "component": "code",
+                        "type": "javascript",
+                        "title": "solution",
+                        "value": "let myFavouriteGames = [\"Chess\", \"Ludo\", \"Badminton\"];<br>myFavouriteGames.unshift(\"Basketball\");<br>console.log(myFavouriteGames);"
+                    }
+                ]
+            },
+            {
+                "id": "6059",
+                "parent_exercise_id": "6054",
+                "course_id": "207",
+                "name": "Question5",
+                "slug": "js-arrays_json__Exercises/Question5_json",
+                "sequence_num": 104,
+                "review_type": "manual",
+                "submission_type": null,
+                "github_link": "https://github.com/navgurukul/newton/tree/master/js-arrays_json/Exercises/Question5.json",
+                "solution": null,
+                "content": [
+                    {
+                        "component": "text",
+                        "value": "What <span style=\"\">output</span> will it show :"
+                    },
+                    {
+                        "component": "code",
+                        "type": "javascript",
+                        "title": "",
+                        "value": "let myFavouriteGames = [\"chess\", \"Ludo\", \"Badminton\"];<br>console.log(myFavouriteGames.2);"
+                    },
+                    {
+                        "component": "code",
+                        "type": "javascript",
+                        "title": "solution",
+                        "value": "Syntax error!"
+                    }
+                ]
+            },
+            {
+                "id": "6060",
+                "parent_exercise_id": "6054",
+                "course_id": "207",
+                "name": "Question6",
+                "slug": "js-arrays_json__Exercises/Question6_json",
+                "sequence_num": 105,
+                "review_type": "manual",
+                "submission_type": null,
+                "github_link": "https://github.com/navgurukul/newton/tree/master/js-arrays_json/Exercises/Question6.json",
+                "solution": null,
+                "content": [
+                    {
+                        "component": "text",
+                        "value": "Remove the element \u201cBasketBall\u201d in this array?"
+                    },
+                    {
+                        "component": "code",
+                        "type": "javascript",
+                        "title": "",
+                        "value": "let myFavouriteGames = [\"chess\", \"Ludo\", \"Badminton\", \"Basketball\", \"Carom\", \"Cricket\"];"
+                    },
+                    {
+                        "component": "code",
+                        "type": "javascript",
+                        "title": "solution",
+                        "value": "let myFavouriteGames = [\"chess\", \"Ludo\", \"Badminton\", \"Basketball\", \"Carom\", \"Cricket\"];<br>let removedItems = myFavouriteGames.splice(3,1);<br>console.log(myFavouriteGames);"
+                    }
+                ]
+            },
+            {
+                "id": "6061",
+                "parent_exercise_id": "6054",
+                "course_id": "207",
+                "name": "Question7",
+                "slug": "js-arrays_json__Exercises/Question7_json",
+                "sequence_num": 106,
+                "review_type": "manual",
+                "submission_type": null,
+                "github_link": "https://github.com/navgurukul/newton/tree/master/js-arrays_json/Exercises/Question7.json",
+                "solution": null,
+                "content": [
+                    {
+                        "component": "text",
+                        "value": "You have to make one program where it will take any array and it will check how  many elements are there in the array, at last will check the length of the array, it is like length property , we have the length property to find length, but we won\u2019t use that here?"
+                    },
+                    {
+                        "component": "text",
+                        "value": "sample <span style=\"\">Input</span>:"
+                    },
+                    {
+                        "component": "text",
+                        "value": "var numbers=[50, 40, 23, 70, 56, 12, 5, 10, 7]"
+                    },
+                    {
+                        "component": "text",
+                        "value": "sample <span style=\"\">Output</span>:"
+                    },
+                    {
+                        "component": "text",
+                        "value": "9"
+                    },
+                    {
+                        "component": "code",
+                        "type": "javascript",
+                        "title": "",
+                        "value": "// please write code here"
+                    },
+                    {
+                        "component": "code",
+                        "type": "javascript",
+                        "title": "solution",
+                        "value": "numbers=[50, 40, 23, 70, 56, 12, 5, 10, 7];<br>var count_element=0;<br>for(var i=0; i<numbers.length;i++){<br>   count_element++<br>}<br>console.log(count_element);"
+                    }
+                ]
+            },
+            {
+                "id": "6062",
+                "parent_exercise_id": "6054",
+                "course_id": "207",
+                "name": "Question8",
+                "slug": "js-arrays_json__Exercises/Question8_json",
+                "sequence_num": 107,
+                "review_type": "manual",
+                "submission_type": null,
+                "github_link": "https://github.com/navgurukul/newton/tree/master/js-arrays_json/Exercises/Question8.json",
+                "solution": null,
+                "content": [
+                    {
+                        "component": "text",
+                        "value": "Write the program, to find the max element of the array,and console it."
+                    },
+                    {
+                        "component": "text",
+                        "value": "Sample <span style=\"\">Input</span>:"
+                    },
+                    {
+                        "component": "text",
+                        "value": "var numbers=[50, 40, 23, 70, 56, 12, 5, 10, 7]"
+                    },
+                    {
+                        "component": "text",
+                        "value": "sample <span style=\"\">Output</span>:"
+                    },
+                    {
+                        "component": "text",
+                        "value": "70"
+                    },
+                    {
+                        "component": "code",
+                        "type": "javascript",
+                        "title": "",
+                        "value": "// please write code here"
+                    },
+                    {
+                        "component": "code",
+                        "type": "javascript",
+                        "title": "solution",
+                        "value": "var numbers=[50, 40, 23, 70, 56, 12, 5, 10, 7];<br>var max_num=0;<br>for(var i=0; i<numbers.length;i++){<br>   if (numbers[i]>max_num){<br>       max_num=numbers[i]<br> <br>   }<br>}<br>"
+                    }
+                ]
+            },
+            {
+                "id": "6063",
+                "parent_exercise_id": "6054",
+                "course_id": "207",
+                "name": "Question9",
+                "slug": "js-arrays_json__Exercises/Question9_json",
+                "sequence_num": 108,
+                "review_type": "manual",
+                "submission_type": null,
+                "github_link": "https://github.com/navgurukul/newton/tree/master/js-arrays_json/Exercises/Question9.json",
+                "solution": null,
+                "content": [
+                    {
+                        "component": "text",
+                        "value": "Write a program to  check the second max of the array, and console it."
+                    },
+                    {
+                        "component": "text",
+                        "value": "Sample <span style=\"\">Input</span>:"
+                    },
+                    {
+                        "component": "text",
+                        "value": "var numbers=[50, 40, 23, 70, 56, 12, 5, 10, 7]"
+                    },
+                    {
+                        "component": "text",
+                        "value": "sample <span style=\"\">Output</span>:"
+                    },
+                    {
+                        "component": "text",
+                        "value": "56"
+                    },
+                    {
+                        "component": "code",
+                        "type": "javascript",
+                        "title": "",
+                        "value": "// please write code here"
+                    },
+                    {
+                        "component": "code",
+                        "type": "javascript",
+                        "title": "solution",
+                        "value": "var numbers=[50, 40, 23, 70, 56, 12, 5, 10, 7]<br>var max=0;<br>var second_max=0;<br>for (var i =0;i<numbers.length;i++){<br> if (max<numbers[i]){<br>   if (second_max<max){<br>     second_max=max;<br>   }<br>   max=numbers[i];<br> }<br> else{<br>     if (second_max<numbers[i]){<br>     second_max=numbers[i];<br>   }<br> }<br>}<br> <br>console.log(second_max);"
+                    }
+                ]
+            },
+            {
+                "id": "6064",
+                "parent_exercise_id": "6054",
+                "course_id": "207",
+                "name": "Question10",
+                "slug": "js-arrays_json__Exercises/Question10_json",
+                "sequence_num": 109,
+                "review_type": "manual",
+                "submission_type": null,
+                "github_link": "https://github.com/navgurukul/newton/tree/master/js-arrays_json/Exercises/Question10.json",
+                "solution": null,
+                "content": [
+                    {
+                        "component": "text",
+                        "value": "Write a program to reverse the element of the array."
+                    },
+                    {
+                        "component": "header",
+                        "variant": 4,
+                        "value": "Hint"
+                    },
+                    {
+                        "component": "text",
+                        "value": "When we have to take last element of array we can use length-1."
+                    },
+                    {
+                        "component": "text",
+                        "value": "Sample <span style=\"\">Input</span>:"
+                    },
+                    {
+                        "component": "text",
+                        "value": "var numbers=[50, 40, 23, 70, 56, 12, 5, 10, 7]"
+                    },
+                    {
+                        "component": "text",
+                        "value": "sample <span style=\"\">Output</span>:"
+                    },
+                    {
+                        "component": "text",
+                        "value": "[7, 10, 5, 12, 56, 70, 23, 40, 50]"
+                    },
+                    {
+                        "component": "code",
+                        "type": "javascript",
+                        "title": "",
+                        "value": "// please write code here"
+                    },
+                    {
+                        "component": "code",
+                        "type": "javascript",
+                        "title": "solution",
+                        "value": "var numbers=[50, 40, 23, 70, 56, 12, 5, 10, 7];<br>var reversedArray=[]<br>for(var i=numbers.length-1; i>=0;i--){<br>   reversedArray.push(numbers[i])<br>}<br>console.log(reversedArray);"
+                    }
+                ]
+            },
+            {
+                "id": "6066",
+                "parent_exercise_id": "6054",
+                "course_id": "207",
+                "name": "Question11",
+                "slug": "js-arrays_json__Exercises/Question11_json",
+                "sequence_num": 110,
+                "review_type": "manual",
+                "submission_type": null,
+                "github_link": "https://github.com/navgurukul/newton/tree/master/js-arrays_json/Exercises/Question11.json",
+                "solution": null,
+                "content": [
+                    {
+                        "component": "text",
+                        "value": "Palindrome is the <span style=\"\">string</span> or number if we reverse it  will be same as number or <span style=\"\">string</span>."
+                    },
+                    {
+                        "component": "text",
+                        "value": "Example:"
+                    },
+                    {
+                        "component": "text",
+                        "value": "MOM"
+                    },
+                    {
+                        "component": "text",
+                        "value": "MALAYALAM"
+                    },
+                    {
+                        "component": "text",
+                        "value": "121"
+                    },
+                    {
+                        "component": "text",
+                        "value": "2002"
+                    },
+                    {
+                        "component": "text",
+                        "value": "Sample <span style=\"\">Input</span> :"
+                    },
+                    {
+                        "component": "text",
+                        "value": "var name=[\u2018m\u2019,\u2019a\u2019,\u2019l\u2019,\u2019a\u2019,\u2019y\u2019,\u2019a\u2019,\u2019l\u2019,\u2019a\u2019,\u2019m\u2019]"
+                    },
+                    {
+                        "component": "text",
+                        "value": "sample <span style=\"\">output</span>:"
+                    },
+                    {
+                        "component": "text",
+                        "value": "This is palindrome"
+                    },
+                    {
+                        "component": "code",
+                        "type": "javascript",
+                        "title": "",
+                        "value": "// please write code here"
+                    },
+                    {
+                        "component": "code",
+                        "type": "javascript",
+                        "title": "solution",
+                        "value": "var Name=['m','a','l','a','y','a','l','a','m'];<br>var new_array=[];<br>for (var i=Name.length-1; i>=0;i--){<br>   new_array.push(Name[i]);<br>}<br>var count=0;<br>for (var j=0; j<Name.length; j++){<br>   if (new_array[j]===Name[j]){<br>       count++;<br>   }<br>}<br>if(count===Name.length){<br>   console.log(\"This is palindrome\");<br>}else{<br>   console.log(\"This is not a palindrome\");<br>}<br>"
+                    }
+                ]
+            },
+            {
+                "id": "6065",
+                "parent_exercise_id": "6054",
+                "course_id": "207",
+                "name": "Question12",
+                "slug": "js-arrays_json__Exercises/Question12_json",
+                "sequence_num": 111,
+                "review_type": "manual",
+                "submission_type": null,
+                "github_link": "https://github.com/navgurukul/newton/tree/master/js-arrays_json/Exercises/Question12.json",
+                "solution": null,
+                "content": [
+                    {
+                        "component": "text",
+                        "value": "Given two arrays, find which numbers are not present in the second array."
+                    },
+                    {
+                        "component": "text",
+                        "value": "var list1 = [1,2,3,4,5,6]"
+                    },
+                    {
+                        "component": "text",
+                        "value": "var list2 = [2,3,1,0,6,7]"
+                    },
+                    {
+                        "component": "code",
+                        "type": "javascript",
+                        "title": "",
+                        "value": "// please write code here"
+                    },
+                    {
+                        "component": "code",
+                        "type": "javascript",
+                        "title": "solution",
+                        "value": "var list1 = [1,2,3,4,5,6]<br>var list2 = [2,3,1,0,6,7]<br>elements=[]<br>for(var i of list1){<br>   if (!list2.includes(i)){<br>       elements.push(i)<br>   }<br>}<br>console.log(elements);"
+                    }
+                ]
+            },
+            {
+                "id": "6067",
+                "parent_exercise_id": "6054",
+                "course_id": "207",
+                "name": "Question13",
+                "slug": "js-arrays_json__Exercises/Question13_json",
+                "sequence_num": 112,
+                "review_type": "manual",
+                "submission_type": null,
+                "github_link": "https://github.com/navgurukul/newton/tree/master/js-arrays_json/Exercises/Question13.json",
+                "solution": null,
+                "content": [
+                    {
+                        "component": "header",
+                        "variant": 4,
+                        "value": "Report Card"
+                    },
+                    {
+                        "component": "text",
+                        "value": "See this list:"
+                    },
+                    {
+                        "component": "text",
+                        "value": "marks = [<br>    [78, 76, 94, 86, 88],<br>    [91, 71, 98, 65, 76],<br>    [95, 45, 78, 52, 49]<br>]"
+                    },
+                    {
+                        "component": "text",
+                        "value": "Think that this is marks of some students from last 3 years, you need to calculate the marks of all subjects."
+                    },
+                    {
+                        "component": "text",
+                        "value": "For the above given list the total sum is- 1142."
+                    },
+                    {
+                        "component": "code",
+                        "type": "javascript",
+                        "title": "",
+                        "value": "// please write code here"
+                    },
+                    {
+                        "component": "code",
+                        "type": "javascript",
+                        "title": "solution",
+                        "value": "var marks = [<br>   [78, 76, 94, 86, 88],<br>   [91, 71, 98, 65, 76],<br>   [95, 45, 78, 52, 49]<br>];<br>var sum=0;<br>for(var i of marks){<br>   for(var j of i){<br>       sum+=j<br>   }<br>}<br>console.log(sum);<br>"
+                    }
+                ]
+            },
+            {
+                "id": "6069",
+                "parent_exercise_id": "6054",
+                "course_id": "207",
+                "name": "Question14",
+                "slug": "js-arrays_json__Exercises/Question14_json",
+                "sequence_num": 113,
+                "review_type": "manual",
+                "submission_type": null,
+                "github_link": "https://github.com/navgurukul/newton/tree/master/js-arrays_json/Exercises/Question14.json",
+                "solution": null,
+                "content": [
+                    {
+                        "component": "text",
+                        "value": "How to find all pairs in an array of <span style=\"\">integers</span> whose sum is equal to the given number?"
+                    },
+                    {
+                        "component": "text",
+                        "value": "Sample <span style=\"\">Input</span>:"
+                    },
+                    {
+                        "component": "text",
+                        "value": "var number = 30"
+                    },
+                    {
+                        "component": "text",
+                        "value": "var n = [10, 11, 12, 13, 14, 17, 18, 19]"
+                    },
+                    {
+                        "component": "text",
+                        "value": "Sample <span style=\"\">Output</span>:"
+                    },
+                    {
+                        "component": "text",
+                        "value": "[<br>  [ 11, 19 ],<br>  [ 12, 18 ],<br>  [ 13, 17 ],<br>  [ 17, 13 ],<br>  [ 18, 12 ],<br>  [ 19, 11 ]<br>]"
+                    },
+                    {
+                        "component": "code",
+                        "type": "javascript",
+                        "title": "",
+                        "value": "// please write code here"
+                    },
+                    {
+                        "component": "code",
+                        "type": "javascript",
+                        "title": "solution",
+                        "value": "var n = [10, 11, 12, 13, 14, 17, 18, 19]<br>var number =30;<br>output=[]<br>for(var i of n){<br>   for(var j of n){<br>       if (i+j === number){<br>           output.push([i,j])<br>       }<br>  }<br>}<br>console.log(output);"
+                    }
+                ]
+            },
+            {
+                "id": "6068",
+                "parent_exercise_id": "6054",
+                "course_id": "207",
+                "name": "Question15",
+                "slug": "js-arrays_json__Exercises/Question15_json",
+                "sequence_num": 114,
+                "review_type": "manual",
+                "submission_type": null,
+                "github_link": "https://github.com/navgurukul/newton/tree/master/js-arrays_json/Exercises/Question15.json",
+                "solution": null,
+                "content": [
+                    {
+                        "component": "text",
+                        "value": "Write a program to count how many odd numbers are there and how many even numbers are there in a given list."
+                    },
+                    {
+                        "component": "text",
+                        "value": "var elements = [23, 14, 56, 12, 19, 9, 15, 25, 31, 42, 43]"
+                    },
+                    {
+                        "component": "code",
+                        "type": "javascript",
+                        "title": "",
+                        "value": "// please write code here"
+                    },
+                    {
+                        "component": "code",
+                        "type": "javascript",
+                        "title": "solution",
+                        "value": "var elements = [23, 14, 56, 12, 19, 9, 15, 25, 31, 42, 43];<br> <br>var odd_numbers=0;<br>var even_numbers=0;<br>for(var i of elements){<br>   if(i%2 ===0){<br>       even_numbers+=1<br>   }<br>   else{<br>       odd_numbers+=1<br>   }<br>}<br>console.log(odd_numbers);<br>console.log(even_numbers);"
+                    }
+                ]
+            },
+            {
+                "id": "6071",
+                "parent_exercise_id": "6054",
+                "course_id": "207",
+                "name": "Question16",
+                "slug": "js-arrays_json__Exercises/Question16_json",
+                "sequence_num": 115,
+                "review_type": "manual",
+                "submission_type": null,
+                "github_link": "https://github.com/navgurukul/newton/tree/master/js-arrays_json/Exercises/Question16.json",
+                "solution": null,
+                "content": [
+                    {
+                        "component": "text",
+                        "value": "Write a program to console the sum of odd numbers and sum of even numbers from a given list."
+                    },
+                    {
+                        "component": "text",
+                        "value": "var elements = [23, 14, 56, 12, 19, 9, 15, 25, 31, 42, 43];"
+                    },
+                    {
+                        "component": "code",
+                        "type": "javascript",
+                        "title": "",
+                        "value": "// please write code here"
+                    },
+                    {
+                        "component": "code",
+                        "type": "javascript",
+                        "title": "solution",
+                        "value": "elements = [23, 14, 56, 12, 19, 9, 15, 25, 31, 42, 43]<br> <br>var sum_odd_numbers=0<br>var sum_even_numbers=0<br>for(var i of elements){<br>   if(i%2 ===0){<br>       sum_even_numbers+=i<br>   }<br>   else{<br>       sum_odd_numbers+=i<br>   }<br>}<br>console.log(sum_odd_numbers);<br>console.log(sum_even_numbers);"
+                    }
+                ]
+            },
+            {
+                "id": "6070",
+                "parent_exercise_id": "6054",
+                "course_id": "207",
+                "name": "Question17",
+                "slug": "js-arrays_json__Exercises/Question17_json",
+                "sequence_num": 116,
+                "review_type": "manual",
+                "submission_type": null,
+                "github_link": "https://github.com/navgurukul/newton/tree/master/js-arrays_json/Exercises/Question17.json",
+                "solution": null,
+                "content": [
+                    {
+                        "component": "text",
+                        "value": "Write a program to console the average of sum of odd and even numbers."
+                    },
+                    {
+                        "component": "text",
+                        "value": "var elements = [23, 14, 56, 12, 19, 9, 15, 25, 31, 42, 43]"
+                    },
+                    {
+                        "component": "code",
+                        "type": "javascript",
+                        "title": "",
+                        "value": "// please write code here"
+                    },
+                    {
+                        "component": "code",
+                        "type": "javascript",
+                        "title": "solution",
+                        "value": "elements = [23, 14, 56, 12, 19, 9, 15, 25, 31, 42, 43]<br>var sum_odd_numbers=0;<br>var sum_even_numbers=0;<br>for(var i of elements){<br>   if(i%2 ===0){<br>       sum_even_numbers+=i<br>   }<br>   else{<br>       sum_odd_numbers+=i<br>   }<br>}<br>console.log((sum_even_numbers+sum_odd_numbers)/2);"
+                    }
+                ]
+            },
+            {
+                "id": "6073",
+                "parent_exercise_id": "6054",
+                "course_id": "207",
+                "name": "Question18",
+                "slug": "js-arrays_json__Exercises/Question18_json",
+                "sequence_num": 117,
+                "review_type": "manual",
+                "submission_type": null,
+                "github_link": "https://github.com/navgurukul/newton/tree/master/js-arrays_json/Exercises/Question18.json",
+                "solution": null,
+                "content": [
+                    {
+                        "component": "text",
+                        "value": "Write a program where it will console these 3 parameters for odd and even numbers."
+                    },
+                    {
+                        "component": "text",
+                        "value": "count",
+                        "decoration": {
+                            "type": "bullet"
+                        }
+                    },
+                    {
+                        "component": "text",
+                        "value": "sum",
+                        "decoration": {
+                            "type": "bullet"
+                        }
+                    },
+                    {
+                        "component": "text",
+                        "value": "average<br><br>",
+                        "decoration": {
+                            "type": "bullet"
+                        }
+                    },
+                    {
+                        "component": "text",
+                        "value": "var elements = [23, 14, 56, 12, 19, 9, 15, 25, 31, 42, 43]"
+                    },
+                    {
+                        "component": "code",
+                        "type": "javascript",
+                        "title": "",
+                        "value": "// please write code here"
+                    },
+                    {
+                        "component": "code",
+                        "type": "javascript",
+                        "title": "solution",
+                        "value": "var elements = [23, 14, 56, 12, 19, 9, 15, 25, 31, 42, 43]<br>var count_odd_numbers=0;<br>var sum_odd_numbers=0;<br>var sum_even_numbers=0;<br>var count_even_numbers=0;<br>for(var i of elements){<br>   if(i%2 ===0){<br>       sum_even_numbers+=i;<br>       count_even_numbers+=1;<br>   }<br>   else{<br>       sum_odd_numbers+=i;<br>       count_odd_numbers+=1;<br>   }<br>}<br>console.log((sum_even_numbers+sum_odd_numbers)/2);<br>console.log(count_odd_numbers);<br>console.log(count_even_numbers);<br>console.log(sum_odd_numbers);<br>console.log(sum_even_numbers);"
+                    }
+                ]
+            },
+            {
+                "id": "6072",
+                "parent_exercise_id": "6054",
+                "course_id": "207",
+                "name": "Question19",
+                "slug": "js-arrays_json__Exercises/Question19_json",
+                "sequence_num": 118,
+                "review_type": "manual",
+                "submission_type": null,
+                "github_link": "https://github.com/navgurukul/newton/tree/master/js-arrays_json/Exercises/Question19.json",
+                "solution": null,
+                "content": [
+                    {
+                        "component": "header",
+                        "variant": 3,
+                        "value": "Kitne Crorepati?"
+                    },
+                    {
+                        "component": "text",
+                        "value": "var kitna<i>paisa</i>hai = [3000, 600000, 324990909, 90990900, 30000, 5600000, 690909090, 31010101, 532010, 510, 4100]"
+                    },
+                    {
+                        "component": "text",
+                        "value": "Who has the  more than 1 crore or equal to 1 crore called Crorepati hain."
+                    },
+                    {
+                        "component": "text",
+                        "value": "Who has the  more than 1 lakh or equal to 1 lakh called Lakhpati hain."
+                    },
+                    {
+                        "component": "text",
+                        "value": "Who has less than 1 lakh they are called as Dilwale hain."
+                    },
+                    {
+                        "component": "text",
+                        "value": "You have to print Count of crorepati, Count of lakhpati, Count of Dilwale"
+                    },
+                    {
+                        "component": "text",
+                        "value": "<span style=\"\">Output</span>:"
+                    },
+                    {
+                        "component": "text",
+                        "value": "4 Crorepati hai"
+                    },
+                    {
+                        "component": "text",
+                        "value": "3 Lakhpati hai"
+                    },
+                    {
+                        "component": "text",
+                        "value": "4 Dilwale hai"
+                    },
+                    {
+                        "component": "code",
+                        "type": "javascript",
+                        "title": "",
+                        "value": "// please write code here"
+                    },
+                    {
+                        "component": "code",
+                        "type": "javascript",
+                        "title": "solution",
+                        "value": "var kitna_paisa_hai = [3000, 600000, 324990909, 90990900, 30000, 5600000, 690909090, 31010101, 532010, 510, 4100]<br> <br>var count_of_crorepati=0;<br>var count_of_lakhpati=0;<br>var count_of_dilwale=0;<br>for( var  i of kitna_paisa_hai){<br>   if(i>= 10000000){<br>       count_of_crorepati+=1<br>   }<br>   else if(i>=100000){<br>       count_of_lakhpati+=1<br>   }<br>   else{<br>       count_of_dilwale+=1<br>   }<br>}<br> <br>console.log(count_of_crorepati);<br>console.log(count_of_lakhpati);<br>console.log(count_of_dilwale);"
+                    }
+                ]
+            },
+            {
+                "id": "6074",
+                "parent_exercise_id": "6054",
+                "course_id": "207",
+                "name": "Question20",
+                "slug": "js-arrays_json__Exercises/Question20_json",
+                "sequence_num": 119,
+                "review_type": "manual",
+                "submission_type": null,
+                "github_link": "https://github.com/navgurukul/newton/tree/master/js-arrays_json/Exercises/Question20.json",
+                "solution": null,
+                "content": [
+                    {
+                        "component": "text",
+                        "value": "Count of the elements that is repeated in a list."
+                    },
+                    {
+                        "component": "text",
+                        "value": "var  char_list = [\"a\", \"n\", \"t\", \"a\", \"a\", \"t\", \"n\", \"n\", \"a\", \"x\", \"u\", \"g\", \"a\", \"x\", \"a\"]"
+                    },
+                    {
+                        "component": "code",
+                        "type": "javascript",
+                        "title": "",
+                        "value": "// please write code here"
+                    },
+                    {
+                        "component": "code",
+                        "type": "javascript",
+                        "title": "solution",
+                        "value": "char_list = [\"a\", \"n\", \"t\", \"a\", \"a\", \"t\", \"n\", \"n\", \"a\", \"x\", \"u\", \"g\", \"a\", \"x\", \"a\"]<br> <br>uniques=[]<br>for(var i of char_list){<br>   if(!uniques.includes(i)){<br>       uniques.push(i)<br>   }<br>}<br>console.log(uniques);<br> <br>for(var j of uniques){<br>   count=0<br>   for(var k of char_list){<br>       if (j === k){<br>           count+=1<br>       }<br>   }<br>   console.log(j,count,\" times\");<br>}"
+                    }
+                ]
+            },
+            {
+                "id": "6075",
+                "parent_exercise_id": "6054",
+                "course_id": "207",
+                "name": "Question21",
+                "slug": "js-arrays_json__Exercises/Question21_json",
+                "sequence_num": 120,
+                "review_type": "manual",
+                "submission_type": null,
+                "github_link": "https://github.com/navgurukul/newton/tree/master/js-arrays_json/Exercises/Question21.json",
+                "solution": null,
+                "content": [
+                    {
+                        "component": "text",
+                        "value": "Remove the duplicates and put them in a separate list"
+                    },
+                    {
+                        "component": "text",
+                        "value": "var n = [19, 17, 12, 17, 17, 18, 10, 17, 14, 12, 19, 17, 12, 13, 11]"
+                    },
+                    {
+                        "component": "code",
+                        "type": "javascript",
+                        "title": "",
+                        "value": "// please write code here"
+                    },
+                    {
+                        "component": "code",
+                        "type": "javascript",
+                        "title": "solution",
+                        "value": "var number_list = [19, 17, 12, 17, 17, 18, 10, 17, 14, 12, 19, 17, 12, 13, 11]<br>uniques=[]<br>duplicates=[]<br>for(var i of number_list){<br>  if(!uniques.includes(i)){<br>      uniques.push(i)<br>  }<br>}<br> <br>for(var j of uniques){<br>  count=0<br>  for(var k of number_list){<br>      if (j === k){<br>          count+=1<br>      }<br>  }<br> if(count >1){<br>   duplicates.push(j);<br> };<br>}<br> <br>console.log(duplicates);"
+                    }
+                ]
+            },
+            {
+                "id": "6076",
+                "parent_exercise_id": "6054",
+                "course_id": "207",
+                "name": "Question22",
+                "slug": "js-arrays_json__Exercises/Question22_json",
+                "sequence_num": 121,
+                "review_type": "manual",
+                "submission_type": null,
+                "github_link": "https://github.com/navgurukul/newton/tree/master/js-arrays_json/Exercises/Question22.json",
+                "solution": null,
+                "content": [
+                    {
+                        "component": "text",
+                        "value": "var mainStr = \"the quick brown fox jumped over the lazy dog. the dog slept over the verandah.\""
+                    },
+                    {
+                        "component": "text",
+                        "value": "subStr = \"over\""
+                    },
+                    {
+                        "component": "text",
+                        "value": "You need to remove the all occurrences of subStr in mainStr and give the <span style=\"\">output</span>"
+                    },
+                    {
+                        "component": "text",
+                        "value": "<span style=\"\">Output</span>: the quick brown fox jumped the lazy dog. The dog slept on the verandah."
+                    },
+                    {
+                        "component": "code",
+                        "type": "javascript",
+                        "title": "",
+                        "value": "// please write code here"
+                    },
+                    {
+                        "component": "code",
+                        "type": "javascript",
+                        "title": "solution",
+                        "value": "var mainStr = \"the quick brown fox jumped over the lazy dog. the dog slept over the verandah.\"<br>var subStr = \"over\";<br> <br>var c = mainStr.split(\" \");<br>output=\"\";<br>for(var i of c){<br>   output=output+i+\" \"<br>}<br>console.log(output);"
+                    }
+                ]
+            }
+        ]
+    }
+}
